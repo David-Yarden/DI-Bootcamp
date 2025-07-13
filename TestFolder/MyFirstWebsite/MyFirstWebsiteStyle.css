@@ -1,0 +1,65 @@
+/* Selector {
+    Property: value;
+} */
+ * {
+    text-align: right;
+ }
+body {
+    background-color: lightblue;
+    background-image: url(Doudousleeping.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    
+}
+h2, p {
+    color: #643d5c;
+    text-align: center;
+    border: 5px dashed #1b3b64;
+    font-size: 24px;
+    cursor: pointer;
+}
+h2:hover,
+p:hover {
+    color: #2677ad;
+    text-align: center;
+    border: 5px dashed #3cff00;
+    font-size: 24px;
+    cursor: pointer;
+p {
+    color: rgba(219, 108, 126,0.5);
+    font-size: 35px;
+    background-color: black;
+    line-height: 35px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+}
+li {
+    list-style: none;
+    display: inline-block;
+   
+}
+.webtext {
+    border: 5px dashed purple;
+}
+.active {
+    color: yellow;
+}
+#lorem {
+    background-color: rgba(211, 211, 211,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+#lorem2 {
+    background-color: rgba(167, 13, 13, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+img{
+    float: right;
+}
+footer {
+    clear: both;
+    text-align: center;
+}

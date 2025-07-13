@@ -1,0 +1,22 @@
+h2 {
+    color: orange
+}
+li {
+    background-color: brown;
+}
+.box {
+    border: 5px solid black;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 20px;
+    width: 33px;
+    height: 33px;
+}
+p {
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+}
+span {
+    font-size: 5vw;
+}
