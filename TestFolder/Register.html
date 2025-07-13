@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <h1>Register</h1>
+    </header>
+        <nav>
+            <a href="https://google.com">Google</a>
+        </nav>
+        <footer>
+            <p>Website made with nuts</p>
+        </footer>
+    <!-- Use GET, not POST -->
+    <form method="get">
+        First Name:<input type="text" name="firstname"><br>
+        Last Name:<input type="text" name="lastname"><br>
+        Email:<input type="email" name="email" required><br>
+        Password:<input type="password" name="password" minlength="5" required><br>
+        Birthday:<input type="date"><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
+        Pets: <br>
+        <input type="checkbox" name="dog">Dog<br>
+        <input type="checkbox" name="cat">Cat<br>
+        <input type="checkbox" name="fish">Fish<br>
+        Cars: <br>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        <input type="submit" value="Register!">
+        <input type="reset" value="Reset"><br>
+    </form>
+</body>
+</html>
