@@ -1,0 +1,11 @@
+*{
+    font-family: 'Ubuntu';
+}
+div{
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}

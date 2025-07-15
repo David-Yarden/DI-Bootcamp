@@ -1,0 +1,21 @@
+*{
+    font-family: 'Ubuntu';
+}
+.odd{
+    background-color: #FFA7A7;
+    font-size: 25px;
+}
+#Number2{
+    color:#0000FF;
+    font-size:50px
+
+}
+#Number4{
+    background-color: #80FF80;
+    font-size: 33px;
+    font-weight: bold;
+    
+}
+:nth-child(3){
+    font-size: 38px;
+}
