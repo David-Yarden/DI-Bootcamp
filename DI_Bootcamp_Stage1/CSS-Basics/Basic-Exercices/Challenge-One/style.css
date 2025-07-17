@@ -1,6 +1,7 @@
 h1 {
     text-align: left;
-text-wrap: nowrap;
+    text-wrap: nowrap;
+    font-family: "UoqMunThenKhung", sans-serif;
 }
 body {
     background:cyan;
@@ -18,4 +19,5 @@ ul {
 }
 span {
     font-weight: bold;
+    font-family: "Roboto Slab", serif;
 }
