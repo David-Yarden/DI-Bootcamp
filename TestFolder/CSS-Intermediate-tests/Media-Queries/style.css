@@ -1,0 +1,14 @@
+@media screen and (orientation: landscape) {
+    div {
+        width : 45%;
+        display: inline-block;
+        background-color: aqua;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    div {
+        width : 100%;
+        background-color: yellow;
+    }
+}
