@@ -7,17 +7,20 @@ body {
 #nav {
     background-color: #B0CFFF;
     float:left;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     width: 140px;
-    height: 350px;
+    height: 28em;
 
 }
-#content{
+#content {
     background-color: #5B7FBD; 
-    height: 410px;
-    padding-right:20px;
+    padding-right: 20px;
     padding-top: 10px;
-    width: 38em
+    width: 38em;
+    height: 28em;
+    margin: 10px 10p; /* Center it horizontally */
 }
 #content li {
     list-style-type: none;
@@ -25,9 +28,15 @@ body {
 }
 h1 {
     text-align: center;
-    text-wrap: wrap;
 }
 
 p {
     text-align: center;
+}
+p.copyright {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
 }
