@@ -1,0 +1,13 @@
+    #outer {
+            display: table;
+            width: 600px;
+            height: 600px;
+            background-color: blue;
+            color: white;
+        }
+
+        #inner {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
