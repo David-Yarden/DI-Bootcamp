@@ -1,0 +1,24 @@
+header {
+  background: red;
+}
+
+article {
+  background: pink;
+  width: 65%;
+  float: right
+  /* clear: both; */
+}
+
+aside {
+  float: left;
+  background: yellow;
+  width: 35%;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;
+}
+section {
+    overflow: hidden;
+}
+footer {
+  background: brown;
+}
