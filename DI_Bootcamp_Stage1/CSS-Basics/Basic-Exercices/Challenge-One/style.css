@@ -1,0 +1,21 @@
+h1 {
+    text-align: left;
+text-wrap: nowrap;
+}
+body {
+    background:cyan;
+    font-family: sans-serif;
+}
+p {
+    width: 800px;
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+    padding-left:200px ;
+    width: 450px;
+    text-align: center;
+}
+span {
+    font-weight: bold;
+}
