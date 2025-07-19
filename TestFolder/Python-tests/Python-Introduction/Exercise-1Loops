@@ -1,0 +1,5 @@
+# Example: Looping through a list
+movies = [" minecraft", " avengers", " iron man",]
+
+for movie in movies:
+    print(f"i love the movie{movie}")
