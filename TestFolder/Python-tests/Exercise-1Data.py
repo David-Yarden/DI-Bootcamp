@@ -1,0 +1,14 @@
+sum = 10 + 3;
+print(sum);
+sub = 15-7;
+print(sub);
+div =(18/3);
+print(div);
+floor = 11//4;
+print(floor);
+remain = 9%4;
+print(remain);
+power = 6**3;
+print(power);
+negation = -12;
+print(negation);
