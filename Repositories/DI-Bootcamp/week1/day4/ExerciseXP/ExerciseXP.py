@@ -85,7 +85,7 @@ print(f"Your pizza toppings are: {pizza_toppings} and costs ${pizza_price}.")
 # -----------------------
 total_cost = 0
 group = int(input("How many people are buying tickets? "))
-for person in range(1, group + 1):
+for person in range(1, group ):
     age = int(input("What is your age?"))
     if age < 3:
         ticket_price = 0
