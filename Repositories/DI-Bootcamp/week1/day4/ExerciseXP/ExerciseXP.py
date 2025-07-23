@@ -54,7 +54,7 @@ print(number_loop)
 my_name = "David"
 username = input("Guess my name: ")
 while username != my_name:
-    username = input("Wrong! Guess again :")
+    username = input("Wrong! Guess again: ")
 print("You guess correctly!")
 # -----------------------
 # Exercise 7
@@ -69,11 +69,41 @@ else:
 # -----------------------
 # Exercise 8
 # -----------------------
+pizza_toppings = []
+while True:
+    new_pizza_topping = input("Choose your pizza toppings one by one, and type quit to finish: ")
+    if new_pizza_topping == "quit":
+        break
+    print(f"Adding {new_pizza_topping} to your pizza")
+    pizza_toppings.append(new_pizza_topping)
+number_of_toppings = len(pizza_toppings)
+pizza_price = 10 + number_of_toppings*2.5
+print(f"Your pizza toppings are: {pizza_toppings} and costs ${pizza_price}.")
 
 # -----------------------
 # Exercise 9
 # -----------------------
-
+total_cost = 0
+group = int(input("How many people are buying tickets? "))
+for person in range(1, group + 1):
+    age = int(input("What is your age?"))
+    if age < 3:
+        ticket_price = 0
+        total_cost = total_cost + ticket_price
+    elif 3<age<13:
+        ticket_price = 10
+        total_cost = total_cost + ticket_price
+    else:
+        ticket_price = 15
+        total_cost = total_cost + ticket_price
+print(f"The total cost for the movie is {total_cost}")
 # -----------------------
 # Exercise 10
 # -----------------------
+sandwich_orders = ["Tuna", "Pastrami", "Avocado", "Pastrami", "Egg", "Chicken", "Pastrami"]
+for _ in range(sandwich_orders.count("Pastrami")): sandwich_orders.remove("Pastrami")
+finished_sandwich = []
+for sandwich in sandwich_orders:
+    finished_sandwich.append(sandwich)
+    print(f"I made your {sandwich} sandwich.")
+print(f"Here is the list of all finished sandwiches: {finished_sandwich}")
