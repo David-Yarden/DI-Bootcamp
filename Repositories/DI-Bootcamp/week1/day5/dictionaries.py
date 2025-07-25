@@ -54,7 +54,7 @@ student_info.update({"patronum": "stag"})
 print(student_info)
 
 names = ["Juliana", "Yosef", "Sonia"]
-addreses = ["Ramat Gan", "Jerusalem", "Tel Aviv"]
+addresses = ["Ramat Gan", "Jerusalem", "Tel Aviv"]
 
 print(list(zip(names,addresses)))
 
