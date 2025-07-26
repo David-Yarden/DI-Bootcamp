@@ -26,17 +26,40 @@ print(f"The total cost for the movie is {total_cost}")
 # Exercise 3
 # -----------------------
 brand_dict = {
-name: Zara,
-creation_date: 1975,
-creator_name: [Amancio, Ortega, Gaona],
-type_of_clothes: [men, women, children, home],
-international_competitors: [Gap, H&M, Benetton],
-number_stores: 7000,
-major_color : {
-    France: blue, 
-    Spain: red, 
-    US: {pink, green}}}
+"name": "Zara",
+"creation_date": 1975,
+"creator_name": ["Amancio", "Ortega", "Gaona"],
+"type_of_clothes": ["men", "women", "children", "home"],
+"international_competitors": ["Gap", "H&M", "Benetton"],
+"number_stores": 7000,
+"major_color" : {
+    "France": "blue", 
+    "Spain": "red", 
+    "US": {"pink", "green"}}}
+brand_dict["number_stores"] = 2
+print(f"Zara's clients can buy different types of clothes such as clothes for: {', '.join(brand_dict['type_of_clothes'])}")
+brand_dict.update(country_creation="Spain")
+if "international_competitors" in brand_dict:
+    brand_dict["international_competitors"].append("Desigual")
+brand_dict.pop("creation_date")
+print(brand_dict["international_competitors"][-1])
+print(brand_dict["major_color"]["US"])
+print(len(brand_dict))
+print(brand_dict.keys())
+more_on_zara = {
+    "creation_date": 1980,
+    "number_stores": 9000
+}
+brand_dict.update(more_on_zara)
 print(brand_dict)
 # -----------------------
 # Exercise 4
 # -----------------------
+users = ["Mickey", "Minnie", "Donald", "Ariel", "Pluto"]
+indices = [0, 1, 2, 3, 4]
+merged_dict_1= dict(zip(users, indices))
+print(merged_dict_1)
+merged_dict_2 = dict(zip(indices, users))
+print(merged_dict_2)
+merged_dict_3 = dict(zip(sorted(users), indices))
+print(merged_dict_3)
