@@ -8,7 +8,7 @@ $a
 #t%'''
 
 rows = [line for line in MATRIX_STR.splitlines() if line.strip()]
-matrix = list(zip(*rows))  # transpose rows to columns
+matrix = list(zip(*rows))
 
 decoded_message = ""
 in_symbol_group = False
