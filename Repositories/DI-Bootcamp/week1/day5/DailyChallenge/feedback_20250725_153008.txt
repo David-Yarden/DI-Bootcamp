@@ -1,0 +1,11 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week1/day5/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- In Challenge 1, using `dict` as a variable name shadows the built-in `dict` type.  It's best practice to use a more descriptive name like `letter_indices`.
+- In Challenge 2, the error handling for non-numeric values in `items_purchase` could be improved. Add a `try-except` block to handle potential `ValueError` exceptions during the conversion to integers.
+- For better readability in Challenge 2, consider breaking down the list comprehension into multiple lines for improved clarity.
+Brief justification:
+- correctness: Both challenges are correctly implemented. Challenge 1 accurately creates a dictionary mapping characters to their indices as specified. Challenge 2 successfully cleans the input data, determines affordable items, sorts them alphabetically, and handles the case where nothing is affordable.  The code directly addresses all requirements mentioned in the Chapter Content/Questions, covering user input, dictionaries, loops, conditionals, string manipulation, and list operations.
+- readability: The code is generally readable. However,  using `dict` as a variable name in Challenge 1 is not ideal. In Challenge 2, the list comprehension is slightly dense and could benefit from being broken into smaller, more readable chunks.  Adding comments to explain the purpose of specific code sections would enhance readability.
+- performance: The performance is quite good for these tasks.  The algorithms are efficient, with time complexity linear to the input size in both cases.  For extremely large inputs, more optimized data structures or algorithms could be considered.  But for typical use cases, the performance is satisfactory.
+- security: The code does not contain any obvious security vulnerabilities.  The input sanitization in Challenge 2 is sufficient for the described scenario, preventing simple injection attacks.
+
