@@ -1,0 +1,11 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week1/day4/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- The code for Challenge 1 could use a `while` loop as an alternative to demonstrate different looping mechanisms.
+- Add input validation to handle non-integer inputs in Challenge 1. 
+- The code for Challenge 2 could be slightly improved by using a more descriptive variable name than `letters` (e.g., `unique_letters`).
+Brief justification:
+- correctness: Both challenges are accurately solved. Challenge 1 correctly generates a list of multiples based on user input. It uses a `for` loop, lists, the `input()` function, and basic arithmetic, all explicitly mentioned in the chapter. Challenge 2 correctly removes consecutive duplicate letters using a `for` loop, strings, string manipulation, and conditional statements, aligning perfectly with the chapter's outline.  The code directly addresses the problem statements and examples provided.
+- readability: The code is generally well-structured and easy to follow.  Variable names are mostly clear. However, slightly more descriptive names (e.g.,  `unique_letters` instead of `letters`) could enhance readability.  Adding comments to explain the logic would further improve readability.
+- performance: The performance of both solutions is efficient for typical inputs.  The time complexity for both is linear, which is reasonable.  For extremely large inputs, optimization might be considered, but that's beyond the scope of these simple challenges. The use of list append in challenge 1 is efficient for this task.
+- security: The code does not have any obvious security vulnerabilities. It directly processes user input, but there's no risk of external vulnerabilities since it is purely for computational purposes.  However, adding input validation (as suggested in feedback) would enhance robustness, preventing potential crashes from unexpected inputs.
+
