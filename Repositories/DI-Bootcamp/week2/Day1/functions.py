@@ -58,8 +58,8 @@ print(my_age)
 current_age()
 
 def happy_birthday():
-   if age > 12
-   print("You have bar mitsva")
-   age += 1
+   if age > 12:
+    print("You have bar mitsva")
+    age += 1
 
 happy_birthday()
