@@ -1,0 +1,12 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week1/day4/ExerciseXP/ExerciseXP.py
+suggestions for improvement:
+- In Exercise 1, the `friend_fav_numbers` variable is defined as a tuple, not a set as instructed.  It should be a set to perform the union operation correctly as intended.
+- Exercise 5's for loop could be improved for clarity and efficiency by iterating directly through the range.
+- Exercise 10 could use a `while` loop instead of a `for` loop to remove 'Pastrami' to better match the instructions. Also the creation of finished_sandwich is redundant, a simple print statement inside the loop would suffice.
+- Some exercises lack comments explaining the logic behind certain steps. Adding comments would significantly improve readability.
+Brief justification:
+- correctness: The code addresses most exercises correctly.  However, Exercise 1 uses a tuple instead of a set for `friend_fav_numbers`, impacting the correctness of set union. Exercise 5 and 10 have minor logic issues.  The overall functionality aligns with the chapter content on sequences, sets, tuples, and lists, and the use of loops and conditional statements. However the slight deviations noted reduces the correctness score.
+- readability: The code is generally readable, with clear variable names and straightforward logic. However, adding comments to explain certain steps, and improving the loop structures in Exercises 5 and 10 would enhance readability.
+- performance: The code's performance is efficient for the given tasks. The list comprehensions (Exercise 4) and some loop structures are optimized. Only minor improvements are suggested.
+- security: There are no security concerns in the provided code.  It only involves basic input/output operations and data manipulation.
+
