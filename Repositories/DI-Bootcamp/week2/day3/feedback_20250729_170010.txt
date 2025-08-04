@@ -1,0 +1,11 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week2/day3/Mini-Project-Tic-Tac-Toe.py
+suggestions for improvement:
+- The input validation in `player_input` could be improved to handle non-numeric input more robustly.  Currently, it only checks for integers; letters or symbols would cause a crash. Consider using a `while` loop and `try-except` to handle different exception types.
+- The board representation uses '_' for empty spaces. While functional, using ' ' (a space) might improve readability as it visually represents an empty cell more clearly.
+- Add a function to clearly display instructions to the user on how to play at the start of the game.
+Brief justification:
+- correctness: The code implements a functional Tic-Tac-Toe game as specified in the chapter content.  It accurately represents the board, gets player input, checks for wins and ties, and manages the game loop. The minor flaw in input validation (handling non-numeric input) doesn't invalidate the core functionality but lowers the score slightly.
+- readability: The code is well-structured, with functions for each major component of the game.  However, using a space character for empty cells and adding instructions would significantly improve the clarity of the game for the user. The current use of underscores is slightly less intuitive for a visual representation of the board.
+- performance: The performance is excellent for a game of this size. The algorithms used are efficient, and there are no obvious bottlenecks.
+- security: The code doesn't have any apparent security vulnerabilities.  It directly interacts with the user through standard input/output and doesn't handle external data sources that could introduce security risks.
+
