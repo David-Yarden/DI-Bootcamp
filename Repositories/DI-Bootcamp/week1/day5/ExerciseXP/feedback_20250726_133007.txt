@@ -1,0 +1,12 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week1/day5/ExerciseXP/ExerciseXP.py
+suggestions for improvement:
+- In Exercise 2, the age check condition `3 < age < 13` might not be entirely accurate for all cases.  Consider using `3 <= age <= 12` for better inclusiveness.
+- In Exercise 3, the `major_color` dictionary's 'US' key uses a set instead of a list for colors.  It's better to maintain consistency and use lists throughout. Also, the creator name should be a string, not a list.
+- In Exercise 3, consider using more descriptive variable names (e.g., `brand_info` instead of `brand_dict`).
+- Add comments explaining the logic in each section, especially for Exercise 2, where the conditional logic is less intuitive.
+Brief justification:
+- correctness: All exercises directly address the chapter content.  Exercise 1 correctly uses the `zip` function. Exercise 2 accurately calculates ticket costs based on age ranges. Exercise 3 correctly creates, modifies, and accesses a dictionary, using methods like `.pop()` and `.update()`. Exercise 4 successfully creates the three requested dictionaries by mapping characters to indices and vice-versa, and sorting them alphabetically. Minor inaccuracies in age range handling in Exercise 2 and data type consistency in Exercise 3 slightly reduce the score.
+- readability: The code is generally readable, but some variable names could be more descriptive (e.g., using `brand_info` instead of `brand_dict`), and adding more comments would enhance understanding, especially in Exercise 2. The structure is clear, although adding blank lines between the exercises would improve readability further.
+- performance: The code's performance is efficient for the tasks involved. There are no obvious performance bottlenecks.
+- security: The code does not introduce any known security risks. It purely focuses on data manipulation and does not involve external resources or user input that could create vulnerabilities. The bonus part in Exercise 2 was not implemented.
+
