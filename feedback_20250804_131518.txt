@@ -1,0 +1,26 @@
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week2/Day5/ExerciseXP.py
+suggestions for improvement:
+- The `find_oldest_cat` function has a bug: the `return oldest` statement is inside the `for` loop, so it returns after checking only the first cat. It should be outside the loop.
+- Add docstrings to the `Cat` class and the `find_oldest_cat` function to improve readability and explain their purpose.
+- Consider using more descriptive variable names (e.g., `oldest_cat` instead of `oldest`).
+Correctness: 80%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week2/Day5/ExerciseXP2.py
+suggestions for improvement:
+- The `bark` method's output should be changed to match the instructions: '<dog_name> goes woof!'
+- Add a comparison of dog sizes to fulfill Step 4 of Exercise 2.
+- Add printing of the name and height for each dog to fulfill Step 3.
+Correctness: 80%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week2/Day5/ExerciseXP3.py
+suggestions for improvement:
+- The code is well-structured and easy to understand.  Consider adding docstrings to the class and methods for better readability and documentation.
+- The use of a `for` loop for printing lyrics is efficient. No performance improvements are immediately apparent.
+Correctness: 100%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week2/Day5/ExerciseXP4.py
+suggestions for improvement:
+- The `sort_animals` method could be slightly improved for efficiency by using a defaultdict instead of checking if the key exists in the dictionary before appending.
+- Add docstrings to all methods to improve readability and understanding of the code's functionality.
+Correctness: 100%
+-----
