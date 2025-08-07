@@ -1,0 +1,14 @@
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/day2/ExerciseXP/ExerciseXP.py
+suggestions for improvement:
+- In Exercise 1, the `Siamese` class could be enhanced with unique attributes or methods if the exercise had specified any breed-specific characteristics.  As it stands, it simply inherits from `Cat` without adding anything new, which is fine given the instructions.
+- In Exercise 2, the `fight` method could include a check for division by zero (if a dog's age is 0).  While the provided examples avoid this, it's good practice to prevent potential errors.
+- Exercise 3 could benefit from error handling in the case that `args` is empty when calling `play`.
+Correctness: 95%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/day2/ExerciseXP/ExerciseXP_part2
+suggestions for improvement:
+- In Exercise 3, the `Dog` class is imported from `ExerciseXP`.  It's best practice to avoid ambiguous import paths. Provide the full path if it's in a different directory or consider refactoring to avoid the need for an external import in this exercise.
+- In Exercise 4, the `check_majority` method prints 'Person not found' if the person isn't in the list.  Consider returning a boolean value instead for better flexibility in how the caller handles the case of a missing person.
+- In both exercises, add docstrings to the classes and methods to enhance readability and explain their purpose and parameters.
+Correctness: 95%
+-----
