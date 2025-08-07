@@ -1,0 +1,12 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week2/day4/DailyChallenge/DailyChallenge.py
+suggestions for improvement:
+- Challenge 1: The code correctly implements the sorting functionality as described. However, it lacks error handling for edge cases, such as empty input or inputs with extra spaces around commas.
+- Challenge 2: The `longest_word` function is mostly correct, but it doesn't handle punctuation correctly as specified in the challenge instructions. It splits the sentence by spaces which means punctuation remains attached to the words. This should be improved.
+- Both challenges: Add docstrings to functions for better readability and understanding. 
+- Challenge 2: Consider using a more efficient approach to find the longest word, for example, using max() with a key function.
+Brief justification:
+- correctness: Challenge 1 correctly takes comma-separated input, splits it, sorts it, and joins it back, fulfilling the chapter's requirements on string manipulation, lists, and sorting.  Challenge 2 mostly addresses the core logic (finding the longest word), but fails to fully consider the requirement to include punctuation as part of the word; the space-based splitting method is flawed in that regard. The core functionality is present, but not fully implemented to the specification of the task. This accounts for the 80% score.
+- readability: The code is well-structured and easy to follow, especially in Challenge 1. Challenge 2 could be improved by adding a docstring to explain the function's purpose and parameters. Variable names are descriptive. Overall it's readable, even without comments.
+- performance: The sorting algorithm in Challenge 1 is efficient (O(n log n)). The linear scan approach in Challenge 2 is also reasonably efficient for typical sentence lengths.  The code could be improved with more efficient methods as suggested in the feedback, making it slightly faster. The current approach is acceptable, hence the 95% score.
+- security: The code doesn't have any security vulnerabilities as it only deals with user input and string manipulation. No external resources are accessed, and no user data is stored or processed in a way that could introduce security risks.
+
