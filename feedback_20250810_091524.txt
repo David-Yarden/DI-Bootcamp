@@ -1,0 +1,21 @@
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/SelfLearning/ExerciseXP.py
+suggestions for improvement:
+- The solution assumes the words file is named 'words.txt' and is in the same directory as the script.  It should handle a more general file path from user input or a specified location.
+- Error handling could be improved by using more specific exception handling (e.g., `FileNotFoundError`) instead of a general `except` block.
+- The performance could be improved by loading the word list once outside of the `get_random_sentence` function and reusing it. Currently, the file is opened and read every time a sentence is generated.
+Correctness: 95%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/SelfLearning/words.txt
+suggestions for improvement:
+- The provided code is a list of words, not Python code.  It does not address either Exercise 1 or Exercise 2.
+- To solve Exercise 1, you need to write Python code that reads a word list from a file, generates a random sentence of a specified length using `random.choice()`, and handles user input with validation.
+- To solve Exercise 2, you need to write Python code that parses a JSON string using `json.loads()`, accesses and modifies a nested key, and saves the modified JSON to a file using `json.dump()`.
+Correctness: 0%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/SelfLearning/ExerciseXP2.py
+suggestions for improvement:
+- Add error handling (try-except blocks) to gracefully handle potential exceptions like `KeyError` if a key is not found in the JSON data.  This is crucial for robustness, especially when dealing with user-provided or external JSON files.
+- Consider using a more descriptive variable name than `sampleJson`.  For example, `employee_data` would be more clear.
+- The date format should be validated to ensure it's a proper date.  Currently, it accepts any string as a birth_date.
+Correctness: 100%
+-----
