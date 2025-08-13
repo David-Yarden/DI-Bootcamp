@@ -1,0 +1,12 @@
+URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/SelfLearning/DailyChallenge.py
+suggestions for improvement:
+- The `word_frequency` method could return 0 instead of `None` when a word is not found for better consistency and usability.
+- The `remove_stop_words` method should ideally take a list of stop words as an argument instead of relying on a predefined list for greater flexibility.  Consider making the `stop_words` parameter a default argument with a standard English stop word list.
+- Add error handling for the `from_file` method in case the file doesn't exist or is not readable.  A `try-except` block could catch `FileNotFoundError` or `IOError`.
+- Consider adding more sophisticated text cleaning options in `TextModification` such as stemming or lemmatization (though that goes beyond explicit instructions).
+Brief justification:
+- correctness: The code accurately implements the `Text` class with methods for word frequency, most common word, and unique words.  The `from_file` class method correctly reads and processes text from a file. The `TextModification` class inherits from `Text` and implements methods to remove punctuation, stop words, and special characters, all as specified in the chapter content. The minor omissions (handling word not found and file I/O errors) prevent a perfect score.
+- readability: The code is well-structured and easy to follow.  Method names are descriptive. However, some improvements could enhance readability, such as using more descriptive variable names and comments where appropriate.
+- performance: The current implementation has reasonable performance for smaller texts. However, for very large text files, the `most_common_word` method's use of a dictionary could become less efficient.  More efficient algorithms could be used for extremely large datasets, but are unnecessary for the problem's scope.  Error handling (missing files) would improve performance by preventing crashes. 
+- security: The code does not present any security vulnerabilities. It only deals with local file handling and string manipulation.
+

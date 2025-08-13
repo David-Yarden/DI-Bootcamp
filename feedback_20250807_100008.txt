@@ -1,0 +1,19 @@
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/day4/ExerciseXP/ExerciseXP.py
+suggestions for improvement:
+- In Exercise 1, the `__add__` and `__iadd__` methods return integers when adding Currency objects, but the example outputs show Currency objects.  The return type should be a `Currency` object.
+- Exercise 2 is missing.  The instructions ask to create `func.py` and `exercise_one.py` files, but they aren't included in the submitted code.
+- In Exercise 1,  the error message in `__add__` and `__iadd__` could be slightly improved for clarity. For example, instead of `<dollar>`, use the actual currency value (like 'dollar').
+- Exercise 1 could benefit from input validation in the constructor to handle invalid amounts or currency types. 
+- Add docstrings to functions and classes to improve readability and understanding.
+Correctness: 90%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/day4/ExerciseXP/Exercuse_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week3/day4/ExerciseXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
