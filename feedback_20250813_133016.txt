@@ -1,0 +1,21 @@
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week4/day1/MiniProject/anagram_checker.py
+suggestions for improvement:
+- The `anagrams.py` file, responsible for the user interface, is missing.  The instructions explicitly require its creation and implementation.
+- Error handling for file I/O (e.g., `FileNotFoundError`) is absent in `load_words`. The program should gracefully handle cases where the word list file is missing or inaccessible.
+- The performance of `get_anagrams` could be improved.  Currently, it iterates through the entire word list for each anagram check.  A more efficient approach would involve grouping words by their sorted character sets.
+- The code lacks comments explaining the purpose and functionality of the methods. Adding comments will significantly improve readability.
+Correctness: 95%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week4/day1/MiniProject/anagrams.py
+suggestions for improvement:
+- The `AnagramChecker` class is missing in the provided code.  The code relies on a `AnagramChecker` class from another file, but that class is not included.  Implement the `AnagramChecker` class with `__init__`, `is_valid_word`, `get_anagrams`, and `is_anagram` methods as specified in the instructions.
+- Error handling could be improved. Instead of simply printing an error message, consider using exceptions for better error management.
+- The performance could be improved by using more efficient algorithms for anagram detection and word checking (e.g., sorting characters instead of nested loops).
+- Add more comprehensive input validation to handle edge cases and unexpected user input (e.g., very long words).
+Correctness: 95%
+-----
+URL: URL: https://github.com/David-Yarden/DI-Bootcamp/blob/main/Repositories/DI-Bootcamp/week4/day1/MiniProject/sowpods.txt
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
