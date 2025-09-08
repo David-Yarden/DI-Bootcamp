@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="btn">Click me</button>
+    <button id="btn1">Hey Hey</button>
+    <button id="jsstyle">Style</button> 
+
+    <script>
+        let styleBtn = document.getElementById("jsstyle");
+
+        styleBtn.addEventListener("click", RespondClick);
+        styleBtn.addEventListener("mouseover", RespondMouseOver);
+        styleBtn.addEventListener("mouseout", RespondMouseOut);
+
+        function RespondClick(e) { 
+            e.target.style.border = "";
+            e.target.style.transform = "scale(1)";
+            e.target.style.backgroundColor = "blue";
+        } 
+
+        function RespondMouseOver(e) { 
+            e.target.style.border = "2px solid red";
+            e.target.style.transform = "scale(1.1)";
+        } 
+
+        function RespondMouseOut(e) { 
+            e.target.style.backgroundColor = "green";
+            e.target.style.color = "yellow";
+        }     
+    </script>
+</body>
+</html>
