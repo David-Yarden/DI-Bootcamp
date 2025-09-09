@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#FF494D, #FF5B7C);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.container {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+#addTaskButton {
+    height: 35px;
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    color: #5FAAFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #305251;
+    background-color: white;
+    padding: 5px 10px;
+    border-bottom: 2px solid #5FAAFF ;
+    
+}
+
+.taskItem label {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+}
+.listTasks {
+    position: relative;
+    padding-bottom: 40px; /* space for the button */
+}
+
+#clearBtn {
+    height: 35px;
+    width: 300px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #5FAAFF;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
