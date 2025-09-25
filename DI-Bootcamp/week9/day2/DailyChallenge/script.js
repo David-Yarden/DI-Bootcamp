@@ -11,7 +11,7 @@ const groceries = {
     }
 };
 
-// 1️⃣ Display fruits
+// 1️ Display fruits
 const displayGroceries = () => {
     console.log("Fruits:");
     groceries.fruits.forEach(fruit => {
@@ -19,7 +19,7 @@ const displayGroceries = () => {
     });
 };
 
-// 2️⃣ Clone groceries and experiment with value/reference
+// 2️ Clone groceries and experiment with value/reference
 const cloneGroceries = () => {
     console.log("\n--- Clone Groceries ---");
 
@@ -43,10 +43,10 @@ const cloneGroceries = () => {
     console.log("shopping.other.paid:", shopping.other.paid);   // false
 };
 
-// ✅ Invoke functions
+// Invoke functions
 displayGroceries();
 cloneGroceries();
 
-// Optional: check groceries after cloning
+// Check groceries after cloning
 console.log("\n--- Groceries after clone ---");
 console.log(groceries);

@@ -1,0 +1,5 @@
+const makePerson = (name, age, favoriteColour) => ({name: name, age: age, favoriteColour: favoriteColour}); 
+const obj1 =  {name: "Jane Doe", age: 42, favoriteColour: "maroon"}
+const getPersonsName = (person) => person.name;
+console.log(obj1.name);
+console.log(getPersonsName(obj1));

@@ -1,0 +1,16 @@
+class Rabbit {
+    constructor(type) {
+        this.type = type;
+    }
+    speak(line) {
+        console.log(`The ${this.type} rabbit says '${line}'`);
+    }
+}
+let killerRabbit = new Rabbit("killer");
+let blackRabbit = new Rabbit("black");
+
+console.log('The type of killerRabbit is ${killerRabbit.type}');
+killerRabbit.speak("meow");
+
+console.log('The type of blackRabbit is ${blackRabbit.type}');
+blackRabbit.speak("w00f");

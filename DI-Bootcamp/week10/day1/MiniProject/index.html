@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div class="controls">
+    <button onclick="chooseSymbol('X')">Play as X</button>
+    <button onclick="chooseSymbol('O')">Play as O</button>
+    <button onclick="setDifficulty('easy')">Easy Mode</button>
+    <button onclick="setDifficulty('hard')">Hard Mode</button>
+  </div>
+
+  <table border="1">
+    <tr>
+      <td id="0" onclick="playerTurn(0)"></td>
+      <td id="1" onclick="playerTurn(1)"></td>
+      <td id="2" onclick="playerTurn(2)"></td>
+    </tr>
+    <tr>
+      <td id="3" onclick="playerTurn(3)"></td>
+      <td id="4" onclick="playerTurn(4)"></td>
+      <td id="5" onclick="playerTurn(5)"></td>
+    </tr>
+    <tr>
+      <td id="6" onclick="playerTurn(6)"></td>
+      <td id="7" onclick="playerTurn(7)"></td>
+      <td id="8" onclick="playerTurn(8)"></td>
+    </tr>
+  </table>
+
+  <h2 id="status"></h2>
+  <button id="restartBtn" onclick="restartGame()" style="display:none;">Restart</button>
+</body>
+</html>
