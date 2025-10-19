@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Star Wars Character Viewer</title>
+
+  <!-- Font Awesome for spinner -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Put your logo image file here named exactly logo.png -->
+    <img src="logo.png" alt="Star Wars Logo" class="logo">
+
+    <button id="generateBtn">Show Character</button>
+
+    <div id="loading" class="loading hidden">
+      <i class="fas fa-spinner fa-spin"></i> Loading character...
+    </div>
+
+    <div id="error" class="error hidden">⚠️ Error loading character. Please try again.</div>
+
+    <div id="character" class="card hidden" aria-live="polite">
+      <h3 id="name">—</h3>
+      <p><strong>Height:</strong> <span id="height">—</span></p>
+      <p><strong>Gender:</strong> <span id="gender">—</span></p>
+      <p><strong>Birth Year:</strong> <span id="birth_year">—</span></p>
+      <p><strong>Homeworld:</strong> <span id="homeworld">—</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
