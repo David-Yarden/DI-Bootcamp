@@ -1,0 +1,9 @@
+{
+  "name": "week13-day1",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node main.js"
+  }
+}
