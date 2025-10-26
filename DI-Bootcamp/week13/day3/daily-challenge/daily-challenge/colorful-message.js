@@ -1,4 +1,3 @@
-// colorful-message.js
 import chalk from 'chalk';
 
 export function displayMessage() {
