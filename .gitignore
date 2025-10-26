@@ -1,1 +1,4 @@
 Hackathon/crypto-portfolio-tracker
+**.env
+**/node_modules
+**package-lock.json
