@@ -1,0 +1,35 @@
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --accent:#7c3aed;
+  --muted:#94a3b8;
+  --msg-bg:#071034;
+  --white:#e6eef8;
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,system-ui,Arial,Helvetica,sans-serif}
+body{margin:0;height:100vh;background:linear-gradient(180deg,#07122a 0%,#07112a 100%);color:var(--white);display:flex;align-items:center;justify-content:center}
+.centered{display:flex;align-items:center;justify-content:center;height:100vh;width:100%}
+.hidden{display:none}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.06));padding:28px;border-radius:12px;width:360px;box-shadow:0 8px 30px rgba(2,6,23,0.6);text-align:center}
+.card input{width:100%;padding:10px;margin:10px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)}
+.row{display:flex;justify-content:center}
+button{background:var(--accent);border:none;padding:10px 16px;border-radius:8px;color:white;cursor:pointer}
+.sidebar{width:260px;background:var(--card);height:80vh;border-radius:12px;padding:12px;margin-right:18px;display:flex;flex-direction:column}
+.sidebar-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.users{overflow:auto}
+.users ul{list-style:none;padding:0;margin:0}
+.users li{padding:6px 8px;border-radius:8px;margin:6px 0;background:linear-gradient(90deg,rgba(255,255,255,0.01),transparent);display:flex;justify-content:space-between;align-items:center}
+.main{flex:1;height:80vh;display:flex;flex-direction:column;border-radius:12px;background:var(--msg-bg);padding:12px}
+.messages{flex:1;overflow:auto;padding:8px}
+.message{padding:8px 12px;border-radius:10px;margin:8px 0;max-width:75%;word-break:break-word}
+.msg-system{background:transparent;color:var(--muted);font-size:13px;text-align:center}
+.msg-me{background:linear-gradient(90deg,var(--accent),#4f46e5);color:white;margin-left:auto}
+.msg-other{background:linear-gradient(90deg,#0b3954,#062a4a);color:var(--white)}
+.msg-meta{font-size:11px;color:var(--muted);margin-top:6px}
+.msgForm{display:flex;gap:8px;padding-top:8px}
+.msgForm input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)}
+@media (max-width:900px){
+  body{padding:12px}
+  .sidebar{display:none}
+  .card{width:100%}
+}
