@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.row {
+  width: 350px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #ffe8c9;
+  border: 2px solid #b89d79;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+}
+
+.votes {
+  width: 40px;
+  text-align: left;
+}
+
+.name {
+  flex: 1;
+  text-align: center;
+}
+
+.click {
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
