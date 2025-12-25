@@ -1,0 +1,247 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.recipe-app form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.recipe-app input,
+.recipe-app textarea {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.recipe-app input:focus,
+.recipe-app textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.recipe-app textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Button Styles */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#clearRecipesButton {
+  background-color: #dc3545;
+  display: block;
+  margin: 2rem auto 0;
+}
+
+#clearRecipesButton:hover {
+  background-color: #c82333;
+}
+
+/* Recipe Container */
+#recipeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.no-recipes {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 2rem;
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 2px solid transparent;
+  transition: border-color 0.25s;
+}
+
+.recipe-card.favorite {
+  border-color: #ffc107;
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.recipe-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.favorite-btn,
+.delete-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background: #2a2a2a;
+}
+
+.favorite-btn {
+  color: #ffc107;
+}
+
+.delete-btn {
+  color: #dc3545;
+}
+
+.toggle-details-btn {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  padding: 0.4em 0.8em;
+  background: #2a2a2a;
+  color: #888;
+}
+
+.toggle-details-btn:hover {
+  background: #3a3a3a;
+  color: white;
+}
+
+/* Recipe Details */
+.recipe-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.recipe-details h4 {
+  margin: 0 0 0.5rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.recipe-ingredients ul {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.recipe-ingredients li {
+  margin-bottom: 0.25rem;
+}
+
+.recipe-instructions {
+  margin-top: 1rem;
+}
+
+.recipe-instructions p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  .recipe-app form,
+  .recipe-card {
+    background: #f5f5f5;
+  }
+
+  .recipe-app input,
+  .recipe-app textarea {
+    background: white;
+    border-color: #ddd;
+  }
+
+  .favorite-btn,
+  .delete-btn,
+  .toggle-details-btn {
+    background: #e9e9e9;
+  }
+
+  .toggle-details-btn:hover {
+    background: #ddd;
+    color: #213547;
+  }
+
+  .recipe-details {
+    border-top-color: #ddd;
+  }
+}
