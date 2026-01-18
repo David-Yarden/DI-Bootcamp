@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-primary: #570df8;
+  --color-secondary: #f000b8;
+  --color-accent: #37cdbe;
+  --color-neutral: #3d4451;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(var(--bc) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(var(--bc) / 0.5);
+}
