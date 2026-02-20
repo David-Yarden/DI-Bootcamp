@@ -1,12 +1,11 @@
 import random
 
-# Petit jeu de devinette
 secret = random.randint(1, 10)
-print("Devine le nombre entre 1 et 10 !") #on affiche le message d'instruction
+print("Devine le nombre entre 1 et 10 !") 
 
-guess = int(input("Ton choix : "))#le joueur entre son choix
+guess = int(input("Ton choix : "))
 
-if guess == secret: #si le joueur a trouvé
-    print("Bravo tu as trouvé !") #alors on affiche un message de félicitation
+if guess == secret:
+    print("Bravo tu as trouvé !")
 else:
-    print(f"Perdu le nombre était {secret}") #sinon on affiche le nombre à trouver
+    print(f"Perdu le nombre était {secret}")

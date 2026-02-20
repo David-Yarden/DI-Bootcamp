@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd JWT authentication exercise - week23 day1\n\nImplement complete JWT auth system with Express including:\n- User registration/login with validation\n- Access tokens \\(1h\\) and refresh tokens \\(7d\\)\n- HTTP-only cookie storage\n- Protected routes middleware\n- Token refresh and logout with revocation\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(npm create:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

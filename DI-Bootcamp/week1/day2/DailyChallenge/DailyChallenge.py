@@ -14,3 +14,5 @@ else:
     random.shuffle(letters)
     shuffled_string = ''.join(letters)
     print(shuffled_string)
+def useless_function():
+    pass
