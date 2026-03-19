@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { display: flex; gap: 4px; }
+    input[type="text"] { padding: 4px 6px; font-size: 1rem; border: 1px solid #999; }
+    button { padding: 4px 10px; font-size: 1rem; }
+    #output { margin-top: 12px; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="lastname" placeholder="Last Name" />
+    <button type="submit">Send</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const lastname = document.getElementById("lastname").value;
+      const json = JSON.stringify({ name, lastname });
+      document.getElementById("output").textContent = json;
+    });
+  </script>
+</body>
+</html>
