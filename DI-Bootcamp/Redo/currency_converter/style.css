@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #1a1a2e;
+  margin-bottom: 28px;
+}
+
+/* ── Rows ─────────────────────────────────────────────── */
+.row {
+  margin-bottom: 20px;
+}
+
+.selectors {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.selectors .field {
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="number"],
+select {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #3b82f6;
+}
+
+/* ── Switch button ────────────────────────────────────── */
+#switch-btn {
+  padding: 10px 14px;
+  font-size: 1.3rem;
+  background: #f0f4ff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+#switch-btn:hover {
+  background: #dbeafe;
+  transform: rotate(180deg);
+}
+
+/* ── Convert button ───────────────────────────────────── */
+#convert-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+  margin-bottom: 20px;
+}
+
+#convert-btn:hover {
+  background: #2563eb;
+}
+
+/* ── Result ───────────────────────────────────────────── */
+#result {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1a1a2e;
+  min-height: 36px;
+}
+
+#error {
+  text-align: center;
+  color: #ef4444;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
