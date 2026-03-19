@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 1 - GET Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <!--
+      GET method: the form data is appended to the URL as query parameters.
+      Example: exercise1.html?name=John&message=Hello
+      The sent data appears in the browser's address bar.
+    -->
+    <form action="exercise1.html" method="GET">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+
+      <input type="submit" value="Send" />
+    </form>
+  </div>
+</body>
+</html>
