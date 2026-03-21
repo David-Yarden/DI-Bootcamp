@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body { font-family: serif; padding: 20px; }
+      h1 { margin-bottom: 20px; }
+      label { display: inline-block; width: 80px; }
+      input[type="text"],
+      input[type="password"] {
+        margin-bottom: 8px;
+      }
+      #message { margin-top: 12px; }
+      .error { color: red; }
+      .success { color: green; }
+    </style>
+  </head>
+  <body>
+    <h1>Login :</h1>
+
+    <form id="loginForm">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <button type="submit" id="submitBtn" disabled>Login</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+      const form = document.getElementById('loginForm');
+      const btn = document.getElementById('submitBtn');
+      const message = document.getElementById('message');
+      const inputs = form.querySelectorAll('input');
+
+      const checkInputs = () => {
+        const allFilled = [...inputs].every((i) => i.value.trim() !== '');
+        btn.disabled = !allFilled;
+      };
+
+      inputs.forEach((i) => i.addEventListener('input', checkInputs));
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        message.textContent = '';
+        message.className = '';
+
+        const body = {
+          username: document.getElementById('username').value.trim(),
+          password: document.getElementById('password').value,
+        };
+
+        try {
+          const res = await fetch('/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+          });
+          const data = await res.json();
+
+          if (res.ok) {
+            message.textContent = `Hi ${data.user.username} welcome back again!`;
+            message.className = 'success';
+            form.reset();
+            btn.disabled = true;
+          } else {
+            message.textContent = data.error;
+            message.className = 'error';
+          }
+        } catch (err) {
+          message.textContent = 'Server error. Please try again.';
+          message.className = 'error';
+        }
+      });
+    </script>
+  </body>
+</html>
