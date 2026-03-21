@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.app-container p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.app-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.app-container input {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 2px solid #4a90e2;
+  outline: none;
+}
+
+.app-container button {
+  padding: 6px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.response {
+  margin-top: 16px;
+  font-style: italic;
+  color: #333;
+}
