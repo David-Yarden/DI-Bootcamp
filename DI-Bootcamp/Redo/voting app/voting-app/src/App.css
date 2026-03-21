@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #f5deb3;
+  border: 1px solid #c8a96e;
+  padding: 18px 24px;
+  gap: 24px;
+}
+
+.votes {
+  font-size: 1.2rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.vote-btn {
+  background: none;
+  border: none;
+  color: green;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+
+.vote-btn:hover {
+  text-decoration: underline;
+}
