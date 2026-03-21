@@ -1,0 +1,48 @@
+<div class="container">
+  <% if (typeof posts !== 'undefined' && posts && posts.length > 0) { %>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <% posts.forEach(post => { %>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="<%= post.link %>" target="_blank" rel="noopener noreferrer">
+                  <%= post.title %>
+                </a>
+              </h5>
+              <div class="mb-2">
+                <% if (post.pubDate) { %>
+                  <span class="text-muted small me-3">
+                    📅 <%= new Date(post.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %>
+                  </span>
+                <% } %>
+                <% if (post.creator) { %>
+                  <span class="text-muted small me-3">✍️ <%= post.creator %></span>
+                <% } %>
+              </div>
+              <% if (post.categories && post.categories.length > 0) { %>
+                <div class="mb-2">
+                  <% post.categories.forEach(cat => { %>
+                    <span class="badge bg-primary badge-category me-1"><%= cat %></span>
+                  <% }) %>
+                </div>
+              <% } %>
+              <% if (post.contentSnippet) { %>
+                <p class="card-text text-muted small">
+                  <%= post.contentSnippet.substring(0, 200) %><%= post.contentSnippet.length > 200 ? '...' : '' %>
+                </p>
+              <% } %>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="<%= post.link %>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                Read More →
+              </a>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } else if (typeof posts !== 'undefined' && posts !== null) { %>
+    <div class="alert alert-warning mt-3">No posts found matching your search.</div>
+  <% } %>
+</div>
