@@ -1,0 +1,109 @@
+.page {
+  font-family: Arial, sans-serif;
+}
+
+/* ── Form Section ────────────────────────────────────────── */
+.form-wrapper {
+  background-color: #d4a96a;
+}
+
+.form-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 14px;
+}
+
+.form-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.form-body {
+  padding: 20px;
+}
+
+form input[type='text'],
+form input[type='number'] {
+  display: block;
+  width: 48%;
+  padding: 8px;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  background: #f5f0ea;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.radio-group label {
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.select-group select {
+  width: 220px;
+  padding: 4px;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  margin-bottom: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.checkbox-group label:first-child {
+  margin-left: 0;
+  margin-bottom: 6px;
+}
+
+form button[type='submit'] {
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #f0f0f0;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+form button[type='submit']:hover {
+  background: #ddd;
+}
+
+/* ── Info Section ────────────────────────────────────────── */
+.info-section {
+  background-color: #1e5f5f;
+  color: white;
+  padding: 20px;
+}
+
+.info-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.info-section p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.restriction {
+  margin-left: 16px !important;
+}
