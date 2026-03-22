@@ -1,11 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../store/store';
-import { selectAllCategories, setSelectedCategory } from '../store/taskSlice';
+import { selectAllCategories, selectSelectedCategoryId, setSelectedCategory } from '../store/taskSlice';
 
+// Uses memoized createSelector selectors: selectAllCategories, selectSelectedCategoryId
 function CategorySelector() {
   const dispatch = useDispatch();
   const categories = useSelector(selectAllCategories);
-  const selectedCategoryId = useSelector((state: RootState) => state.tasks.selectedCategoryId);
+  const selectedCategoryId = useSelector(selectSelectedCategoryId);
 
   return (
     <div style={{ marginBottom: '20px' }}>

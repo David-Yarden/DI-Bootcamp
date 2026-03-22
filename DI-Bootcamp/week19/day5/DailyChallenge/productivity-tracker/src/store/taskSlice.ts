@@ -98,7 +98,7 @@ export const {
 // Base selectors
 const selectTasks = (state: RootState) => state.tasks.tasks;
 const selectCategories = (state: RootState) => state.tasks.categories;
-const selectSelectedCategoryId = (state: RootState) => state.tasks.selectedCategoryId;
+export const selectSelectedCategoryId = (state: RootState) => state.tasks.selectedCategoryId;
 
 // Memoized selectors
 export const selectTasksByCategory = createSelector(

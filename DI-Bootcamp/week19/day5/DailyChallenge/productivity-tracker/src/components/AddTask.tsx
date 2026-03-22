@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTask, selectAllCategories } from '../store/taskSlice';
 
@@ -8,13 +8,14 @@ function AddTask() {
   const [title, setTitle] = useState('');
   const [categoryId, setCategoryId] = useState<number>(categories[0]?.id || 0);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // useCallback prevents a new function reference on every render
+  const handleSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault();
     if (title.trim() && categoryId) {
       dispatch(addTask({ title: title.trim(), categoryId }));
       setTitle('');
     }
-  };
+  }, [dispatch, title, categoryId]);
 
   return (
     <form onSubmit={handleSubmit} style={{ marginBottom: '20px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>

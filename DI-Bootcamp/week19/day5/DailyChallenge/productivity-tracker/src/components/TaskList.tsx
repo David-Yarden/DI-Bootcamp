@@ -1,15 +1,18 @@
 import { useSelector } from 'react-redux';
-import { selectTasksByCategory, selectCompletedTasks } from '../store/taskSlice';
+// selectTasksByCategory is a memoized createSelector that filters by selectedCategoryId in Redux state
+// selectCompletedTasks is a memoized createSelector that counts completed tasks across all tasks
+import { selectTasksByCategory } from '../store/taskSlice';
 import TaskItem from './TaskItem';
 
 function TaskList() {
+  // Tasks are filtered by the category stored in Redux (set by CategorySelector via setSelectedCategory)
   const tasks = useSelector(selectTasksByCategory);
-  const completedCount = useSelector(selectCompletedTasks);
+  const completedCount = tasks.filter((t) => t.completed).length;
 
   return (
     <div>
       <div style={{ marginBottom: '10px', color: '#666' }}>
-        Completed: {completedCount} / {tasks.length} tasks
+        Completed: {completedCount} / {tasks.length} tasks shown
       </div>
 
       {tasks.length === 0 ? (
