@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { createSelector } from '@reduxjs/toolkit';
 import { RootState } from './store';
 
@@ -33,7 +33,7 @@ const bookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    setSelectedGenre: (state, action) => {
+    setSelectedGenre: (state, action: PayloadAction<string>) => {
       state.selectedGenre = action.payload;
     },
   },
