@@ -3,11 +3,18 @@ import Greeting from './Components/Greeting'
 import Counter from './Components/Counter'
 import UserCard from './Components/UserCard'
 import UserList from './Components/UserList'
+import BookList from './Components/BookList'
 
 function App() {
   return (
     <div className="app-container">
       <h1>TypeScript with React — Exercises</h1>
+
+      {/* ── Daily Challenge: Book List with Generic List component ── */}
+      <section>
+        <h2>Daily Challenge: Book List (Generic List + TypeScript)</h2>
+        <BookList />
+      </section>
 
       {/* ── Exercise 2: Greeting component with typed props ── */}
       <section>
