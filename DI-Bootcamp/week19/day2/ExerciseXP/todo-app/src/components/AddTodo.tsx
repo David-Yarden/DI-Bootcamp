@@ -19,7 +19,7 @@ function AddTodo() {
       <input
         type="text"
         value={text}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)}
         placeholder="Enter a new todo..."
         style={{
           padding: '8px',
